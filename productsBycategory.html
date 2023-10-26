@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Season Final Project</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div><i class="fa-solid fa-gem"></i></div>
+          <a class="navbar-brand ms-2" href="index.html">Graceful Goods</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex">
+              <div class="left d-flex">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Categories
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-category="electronics" onclick="window.location.href='productsBycategory.html?category=electronics'">Electronics</a></li>
+                    <li><a class="dropdown-item" data-category="jewelery" onclick="window.location.href='productsBycategory.html?category=jewelery'">Jewelery</a></li>
+                    <li><a class="dropdown-item" data-category="men's clothing" onclick="window.location.href='productsBycategory.html?category=men'">Men's clothing</a></li>
+                    <li><a class="dropdown-item" data-category="women's clothing" onclick="window.location.href='productsBycategory.html?category=women'">women's clothing</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-us">Contact us</a>
+                </li>
+              </div>
+              <div class="right d-flex">
+                <li class="nav-link icons">
+                  <span class="ps-2"><i class="fa-solid fa-cart-shopping"></i></span>
+                  <span class="ps-2"><i class="fa-regular fa-heart"></i></span>
+                  <span class="ps-2"><i class="fa-solid fa-user"></i></span>
+                  <strong>Logout</strong>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section class="allProductsCat container">
+    </section>
+      <section class="container-fluid question d-flex flex-column justify-content-center align-items-center">
+        <h3>Do you have any questions?</h3>
+        <p>Send your question and we'll answer it immediately.</p>
+        <div class="call-us">
+          <input type="text" class="number rounded-4" placeholder="+2 (01) _ _ _ _">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+      </section>
+      <section class=" contact-us container-fluid" id="contact-us">
+        <div class=" child d-flex justify-content-around flex-column align-items-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="mb-3 hh">Get answers and advices from professional consultants.</h4>
+                    <div class="icon-and-things d-flex">
+                        <svg class="svg-inline--fa fa-map" aria-hidden="true" focusable="false" data-prefix="far" data-icon="map" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M565.6 36.2C572.1 40.7 576 48.1 576 56V392c0 10-6.2 18.9-15.5 22.4l-168 64c-5.2 2-10.9 2.1-16.1 .3L192.5 417.5l-160 61c-7.4 2.8-15.7 1.8-22.2-2.7S0 463.9 0 456V120c0-10 6.1-18.9 15.5-22.4l168-64c5.2-2 10.9-2.1 16.1-.3L383.5 94.5l160-61c7.4-2.8 15.7-1.8 22.2 2.7zM48 136.5V421.2l120-45.7V90.8L48 136.5zM360 422.7V137.3l-144-48V374.7l144 48zm48-1.5l120-45.7V90.8L408 136.5V421.2z"></path></svg><!-- <i class="fa-regular fa-map "></i> Font Awesome fontawesome.com -->
+                        <p>Address</p>
+                    </div>
+                    <p class="para2">1650 Lombard Street, San Francisco, CA 94123</p>
+                    <hr>
+                    <div class="icon-and-things d-flex">
+                        <svg class="svg-inline--fa fa-mobile-screen-button" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-screen-button" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z"></path></svg><!-- <i class="fa-solid fa-mobile-screen-button"></i> Font Awesome fontawesome.com -->
+                        <p>Phone</p>
+                    </div>
+                    <p class="para2">+1 (415) 876-3250 / +1 (415) 876-3251
+                    </p>
+                    <hr>
+                    <div class="icon-and-things d-flex">
+                        <svg class="svg-inline--fa fa-envelope" aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"></path></svg><!-- <i class="fa-regular fa-envelope"></i> Font Awesome fontawesome.com --> 
+                        <p>Say Hello
+                        </p>
+                    </div>
+                    <p class="para2">email@sitename.com
+                    </p>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                  <iframe src="https://maps.google.com/maps?q=chicago&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" style="border: 0" allowfullscreen=""></iframe>              
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer class="container-fluid">
+        <div class="container">
+          <div class="row first d-flex justify-content-center align-items-center">
+            <div class="col-md-3">
+              <small>Support</small>
+              <div class="icon-word d-flex">
+                <i class="fa-solid fa-phone"></i>
+                <p>02-367-36-558</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <small>Email</small>
+              <div class="icon-word d-flex">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@gracegoods.com</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <small>Social Networks</small>
+              <div class="icon-word">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+            <div class="col-md-3 mt-4">
+              <small>Subscribe to our newsteller</small>
+              <div class="send"><input type="text" class="numbers rounded-4" placeholder="Enter Email">          </div>
+            </div>
+          </div>
+          <div class="row second d-flex justify-content-center align-items-center">
+            <div class="col-md-3">
+              <h4>Company</h4>
+              <p>About</p>
+              <p>Pharamacies</p>
+              <p>Partner</p>
+              <p>Jobs</p>
+              <p>Contact</p>
+              <p>Cooperation</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Help</h4>
+              <p>Personal Account</p>
+              <p>Payment nd Delivery</p>
+              <p>Question And Answer</p>
+              <p>How To Reserve An Item?</p>
+              <p>Reminder For The Consumer</p>
+              <p>Privacy Policy</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Promotions And Sales</h4>
+              <p>Promotion</p>
+              <p>Gift Certifications</p>
+              <p>Loyalty Program</p>
+              <p>Instaallment Cards</p>
+              <p>Partner Discounts</p>
+              <p>Cashback</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Press Center</h4>
+              <p>News</p>
+              <p>Article</p>
+              <p>Blog</p>
+              <p>Review</p>
+              <p>News</p>
+              <p>Article</p>
+            </div>
+          </div>
+          <div class="row p-2  justify-content-center align-items-center">
+            <p style="text-align: center;">© GracingGoods.com</p>
+          </div>
+        </div>
+      </footer>
+      <script src="js/all.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/main3.js"></script>
+      <script src="js/main2.js"></script>
+  </body>
+  </html>
