@@ -169,9 +169,6 @@ html,body{
         flex-direction: column;
         align-items: center;
     }
-    .special{
-        padding: 0 120px;
-    }
     .cards{
         width: 100%;
     }
@@ -246,7 +243,11 @@ html,body{
         width: 50%;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 651px) {
+    .home{
+        flex-direction: column;
+        align-items: center;
+    }
     .product-self .img-and-card{
         display: flex;
         flex-direction: column;
@@ -467,8 +468,8 @@ footer .second{
     justify-content: space-between;
 }
 .cat-img{
-    width: 250px;
-    height: 220px;
+    width: 100%;
+    height: 100%px;
     padding: 0 30px;
     cursor: pointer;
 }
