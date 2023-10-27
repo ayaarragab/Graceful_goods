@@ -117,6 +117,11 @@ html,body{
     padding: 0;
     overflow-x: hidden;
     }
+    .cat-img img{
+        display: block;
+        width: 250px;
+        height: 250px;
+    }
 @media (max-width: 1200px) and (min-width:831px) {
     html,body{
         width: 100%;
@@ -242,7 +247,12 @@ html,body{
     .para2{
         width: 50%;
     }
+.categ .row{
+margin: auto auto;
 }
+}
+
+
 @media (max-width: 651px) {
     .home{
         flex-direction: column;
@@ -473,11 +483,7 @@ footer .second{
     padding: 0 30px;
     cursor: pointer;
 }
-.cat-img img{
-    display: block;
-    width: 250px;
-    height: 250px;
-}
+
 .categ{
     width: 100%;
     display: flex;
