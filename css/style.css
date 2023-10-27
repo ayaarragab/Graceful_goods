@@ -324,7 +324,19 @@ border-bottom: 1px solid #d2dee9;
 .navbar-nav .right{
     margin-bottom: 20px;
 }
+.products .row .col-md-12 .carousel-inner .carousel-item .row .col-md-3{
+    display: flex;
+align-items: center;
+justify-content: center;
 }
+#search{
+    width: 80%;
+}
+}
+
+
+
+
 .carousel-inner{
 margin-top: 10px;
 }
