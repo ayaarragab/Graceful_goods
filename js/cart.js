@@ -1,3 +1,19 @@
+function checkLoginStatus() {
+  const token = localStorage.getItem('token');
+  return !!token;
+}
+
+if (checkLoginStatus()) {
+  let cart = document.getElementsByClassName('cartProducts')[0];
+  cart.innerHTML += `
+    <h2 class="text-center">There're the products you've added!</h2>
+    <div class="cardItems d-flex justify-content-center align-items-center" id="cartProducts"></div>
+    <button type="button">Continue the buying process</button>`;
+} else {
+  let cart = document.getElementsByClassName('cartProducts')[0];
+  cart.innerHTML += `<h2 class="text-center">Please login to add products to the cart.</h2>`;
+}
+
 (async () => {
     function getCartFromLocalStorage() {
       const cart = localStorage.getItem('cart');
@@ -28,7 +44,7 @@
           productListContainer.innerHTML += productElement;
         });
       }
-      
+
   
     function createProductElement(product) {
       const productElement = `<div class="product m-4">

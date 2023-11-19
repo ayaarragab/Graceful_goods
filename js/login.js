@@ -14,7 +14,6 @@ function addToCart(event) {
       window.location.href = 'login.html';
     }
   }
-  
   async function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
@@ -23,6 +22,7 @@ function addToCart(event) {
   
     if (isAuthenticated) {
       alert('Login successful!');
+      localStorage.setItem('username', username);
     } else {
       alert('Invalid username or password. Please try again.');
     }
