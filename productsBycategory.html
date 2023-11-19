@@ -12,49 +12,58 @@
     <title>Season Final Project</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div><i class="fa-solid fa-gem"></i></div>
-          <a class="navbar-brand ms-2" href="index.html">Graceful Goods</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex">
-              <div class="left d-flex">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Categories
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" data-category="electronics" onclick="window.location.href='productsBycategory.html?category=electronics'">Electronics</a></li>
-                    <li><a class="dropdown-item" data-category="jewelery" onclick="window.location.href='productsBycategory.html?category=jewelery'">Jewelery</a></li>
-                    <li><a class="dropdown-item" data-category="men's clothing" onclick="window.location.href='productsBycategory.html?category=men'">Men's clothing</a></li>
-                    <li><a class="dropdown-item" data-category="women's clothing" onclick="window.location.href='productsBycategory.html?category=women'">women's clothing</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-us">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact-us">Contact us</a>
-                </li>
-              </div>
-              <div class="right d-flex">
-                <li class="nav-link icons">
-                  <span class="ps-2"><i class="fa-solid fa-cart-shopping"></i></span>
-                  <span class="ps-2"><i class="fa-regular fa-heart"></i></span>
-                  <span class="ps-2"><i class="fa-solid fa-user"></i></span>
-                  <strong>Logout</strong>
-                </li>
-              </div>
-            </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <div><i class="fa-solid fa-gem"></i></div>
+      <a class="navbar-brand ms-2" href="index.html">Graceful Goods</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex">
+          <div class="left d-flex">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-category="electronics" onclick="window.location.href='productsBycategory.html?category=electronics'">Electronics</a></li>
+                <li><a class="dropdown-item" data-category="jewelery" onclick="window.location.href='productsBycategory.html?category=jewelery'">Jewelery</a></li>
+                <li><a class="dropdown-item" data-category="men's clothing" onclick="window.location.href='productsBycategory.html?category=men'">Men's clothing</a></li>
+                <li><a class="dropdown-item" data-category="women's clothing" onclick="window.location.href='productsBycategory.html?category=women'">women's clothing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact us</a>
+            </li>
           </div>
-        </div>
-    </nav>
+          <div class="right d-flex">
+            <li class="nav-link icons">
+              <span class="ps-2"><i class="fa-solid fa-cart-shopping"></i></span>
+              <span class="ps-2"><i class="fa-regular fa-heart"></i></span>
+            </li>
+            <li class="nav-item dropdown seconddrop">
+                <a class="nav-link ret dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-category="" onclick="window.location.href=''">Card</a></li>
+                    <li><a class="dropdown-item" data-category="" onclick="window.location.href=''">SignUp</a></li>
+                    <li><a class="dropdown-item" data-category="" onclick="window.location.href=''">Login</a></li>
+                    <li><a class="dropdown-item" data-category="" onclick="window.location.href=''">Logout</a></li>
+                </ul>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+</nav>
     <section class="allProductsCat container">
     </section>
       <section class="container-fluid question d-flex flex-column justify-content-center align-items-center">
