@@ -168,6 +168,9 @@ html,body{
         width: 100%;
     }
 }
+.dropdown-menu{
+cursor: pointer;
+}
 @media (max-width: 830px) and (min-width:651px) {
     .seconddrop .nav-link{
         padding: 0;
@@ -646,4 +649,19 @@ form button{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+}
+.cartProducts h2{
+    color: #2D4A64;
+}
+.cartProducts button{
+    border: 1px solid #2D4A64;
+    margin-top: 50px;
+    width: fit-content;
+    background-color: rgba(111, 109, 109, 0.07);
+    color: #2D4A64;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;   
 }

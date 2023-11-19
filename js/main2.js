@@ -17,7 +17,7 @@ async function displayProduct(product_id) {
                 <h5 class="card-title">$${jsonData.price}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">$${parseInt(jsonData.price) + 10}</h6>
                 <p class="card-text">In stock</p>
-                <a href="#" class="btn btn-primary">Add to cart</a>
+                <a href="#" class="btn btn-primary" data-id="${jsonData.id}" onclick="window.location.href='cart.html?id=${jsonData.id}'">Add to cart</a>
             </div>
         </div>
 </div>
