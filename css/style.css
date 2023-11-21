@@ -269,6 +269,9 @@ cursor: pointer;
 .categ .row{
 margin: auto auto;
 }
+#cartProducts{
+    flex-direction: column;
+}
 }
 
 
@@ -355,8 +358,6 @@ border-bottom: 1px solid #d2dee9;
     width: 100%;
     margin-bottom: 20px;
 }
-.ret svg{
-}
 .products .row .col-md-12 .carousel-inner .carousel-item .row .col-md-3{
     display: flex;
 align-items: center;
@@ -364,6 +365,9 @@ justify-content: center;
 }
 #search{
     width: 80%;
+}
+#cartProducts{
+    flex-direction: column;
 }
 }
 
