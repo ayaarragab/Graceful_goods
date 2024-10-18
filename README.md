@@ -10,8 +10,6 @@ You can view the live version of the project here: [Graceful Goods](https://ayaa
 - Responsive design, adapting to various screen sizes.
 - Product listing and categories.
 - Interactive cart functionality allowing users to add and remove items.
-- Fully static web application, hosted on GitHub Pages.
-
 ## Getting Started
 ### Prerequisites
 To run this project locally, you just need a web browser.
